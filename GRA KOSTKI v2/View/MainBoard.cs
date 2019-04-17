@@ -12,11 +12,11 @@ namespace GRA_KOSTKI_v2
 {
     public partial class MainBoard : Form
     {
-        
+
 
         public MainBoard(string nauka)
         {
-            
+
             InitializeComponent();
             button16.Select();
             if (nauka == "TAK")
@@ -46,9 +46,9 @@ namespace GRA_KOSTKI_v2
         protected override bool ProcessCmdKey(ref Message msg, Keys keyData)  // PRZYPISANIE KLAWISZA
         {
             if (pictureBox1.Visible == true)
-               {
-                   if (keyData == (Keys.Q))
-                   {
+            {
+                if (keyData == (Keys.Q))
+                {
 
                     button16.BackColor = Color.Yellow;
                     button31.BackColor = Color.BurlyWood;
@@ -57,25 +57,25 @@ namespace GRA_KOSTKI_v2
                     button16.PerformClick();
                     button31.Enabled = true;
                     return true;
-                   }
-               }
-               else
-               {
-                   if (keyData == (Keys.Q))
-                   {
-                        button20.BackColor = Color.Yellow;
-                        button27.BackColor = Color.BurlyWood;
-                        button27.Enabled = false;
-                        button20.Select();
-                        button20.PerformClick();
-                        button27.Enabled = true;
-                        return true;
-                   }
-               }
-               if (pictureBox1.Visible == true)
-               {
-                   if (keyData == (Keys.W))
-                   {
+                }
+            }
+            else
+            {
+                if (keyData == (Keys.Q))
+                {
+                    button20.BackColor = Color.Yellow;
+                    button27.BackColor = Color.BurlyWood;
+                    button27.Enabled = false;
+                    button20.Select();
+                    button20.PerformClick();
+                    button27.Enabled = true;
+                    return true;
+                }
+            }
+            if (pictureBox1.Visible == true)
+            {
+                if (keyData == (Keys.W))
+                {
                     button31.BackColor = Color.Yellow;
                     button16.BackColor = Color.BurlyWood;
                     button16.Enabled = false;
@@ -83,12 +83,12 @@ namespace GRA_KOSTKI_v2
                     button31.PerformClick();
                     button16.Enabled = true;
                     return true;
-                   }
-               }
-               else
-               {
-                   if (keyData == (Keys.W))
-                   {
+                }
+            }
+            else
+            {
+                if (keyData == (Keys.W))
+                {
                     button27.BackColor = Color.Yellow;
                     button20.BackColor = Color.BurlyWood;
                     button20.Enabled = false;
@@ -96,36 +96,36 @@ namespace GRA_KOSTKI_v2
                     button27.PerformClick();
                     button20.Enabled = true;
                     return true;
-                   }
-               }
-               if (pictureBox1.Visible == true)
-               {
-                   if (keyData == (Keys.A))
-                   {
+                }
+            }
+            if (pictureBox1.Visible == true)
+            {
+                if (keyData == (Keys.A))
+                {
                     button_zbieraj.BackColor = Color.Yellow;
                     but_p_niezebrane.BackColor = Color.BurlyWood;
                     button_zbierzWszystkie.BackColor = Color.BurlyWood;
                     button_zbieraj.Select();
                     button_zbieraj.PerformClick();
-                       return true;
-                   }
-               }
-               else
-               {
-                   if (keyData == (Keys.A))
-                   {
+                    return true;
+                }
+            }
+            else
+            {
+                if (keyData == (Keys.A))
+                {
                     but_zbieraj2.BackColor = Color.Yellow;
                     p_niezebrane2.BackColor = Color.BurlyWood;
                     but_zbierz_pozostale2.BackColor = Color.BurlyWood;
                     but_zbieraj2.Select();
                     but_zbieraj2.PerformClick();
-                       return true;
-                   }
-               }
-               if (pictureBox1.Visible == true)
-               {
-                   if (keyData == (Keys.S))
-                   {
+                    return true;
+                }
+            }
+            if (pictureBox1.Visible == true)
+            {
+                if (keyData == (Keys.S))
+                {
                     but_p_niezebrane.BackColor = Color.Yellow;
                     button_zbieraj.BackColor = Color.BurlyWood;
                     button_zbierzWszystkie.BackColor = Color.BurlyWood;
@@ -137,12 +137,12 @@ namespace GRA_KOSTKI_v2
                     button_zbierzWszystkie.Enabled = true;
 
                     return true;
-                   }
-               }
-               else
-               {
-                   if (keyData == (Keys.S))
-                   {
+                }
+            }
+            else
+            {
+                if (keyData == (Keys.S))
+                {
                     p_niezebrane2.BackColor = Color.Yellow;
                     but_zbieraj2.BackColor = Color.BurlyWood;
                     but_zbierz_pozostale2.BackColor = Color.BurlyWood;
@@ -153,34 +153,34 @@ namespace GRA_KOSTKI_v2
                     but_zbieraj2.Enabled = true;
                     but_zbierz_pozostale2.Enabled = true;
                     return true;
-                   }
-               }
-               if (pictureBox1.Visible == true)
-               {
-                   if (keyData == (Keys.Z))
-                   {
+                }
+            }
+            if (pictureBox1.Visible == true)
+            {
+                if (keyData == (Keys.Z))
+                {
                     button_zbierzWszystkie.BackColor = Color.Yellow;
                     button_zbieraj.BackColor = Color.BurlyWood;
                     but_p_niezebrane.BackColor = Color.BurlyWood;
                     button_zbierzWszystkie.Select();
                     button_zbierzWszystkie.PerformClick();
-                       return true;
-                   }
-               }
-               else
-               {
-                   if (keyData == (Keys.Z))
-                   {
+                    return true;
+                }
+            }
+            else
+            {
+                if (keyData == (Keys.Z))
+                {
                     but_zbierz_pozostale2.BackColor = Color.Yellow;
                     but_zbieraj2.BackColor = Color.BurlyWood;
                     p_niezebrane2.BackColor = Color.BurlyWood;
                     but_zbierz_pozostale2.Select();
                     but_zbierz_pozostale2.PerformClick();
-                       return true;
-                   }
-               }
-               if (pictureBox1.Visible == true)
-               {
+                    return true;
+                }
+            }
+            if (pictureBox1.Visible == true)
+            {
                 if (button13.Enabled == true)
                 {
                     if (keyData == (Keys.X))
@@ -191,22 +191,22 @@ namespace GRA_KOSTKI_v2
                         return true;
                     }
                 }
-                     
-               }
-               else
-               {
+
+            }
+            else
+            {
                 if (ZAKONCZ_2.Enabled == true)
                 {
-                   if (keyData == (Keys.X))
-                   {
-                    ZAKONCZ_2.BackColor = Color.Yellow;
-                    ZAKONCZ_2.Select();
-                    ZAKONCZ_2.PerformClick();
-                       return true;
-                   }
+                    if (keyData == (Keys.X))
+                    {
+                        ZAKONCZ_2.BackColor = Color.Yellow;
+                        ZAKONCZ_2.Select();
+                        ZAKONCZ_2.PerformClick();
+                        return true;
+                    }
                 }
             }
-              
+
 
             if (this.ActiveControl.Name == "button16")
             {
@@ -1302,11 +1302,11 @@ namespace GRA_KOSTKI_v2
             {
                 if (int.Parse(textBox10.Text) < 100)
                 {
-                using (var newFrm = new NewDay(TB_RUNDA.Text, TB_U6.Text, TB_U12.Text, TB_U9.Text, textBox29.Text))
-                {
-                    newFrm.ShowDialog();  // execution of Form1 stops until Form2 is closed
-                }
-                groupBox1.Visible = true;
+                    using (var newFrm = new NewDay(TB_RUNDA.Text, TB_U6.Text, TB_U12.Text, TB_U9.Text, textBox29.Text))
+                    {
+                        newFrm.ShowDialog();  // execution of Form1 stops until Form2 is closed
+                    }
+                    groupBox1.Visible = true;
                 }
             }
         }
@@ -1656,11 +1656,6 @@ namespace GRA_KOSTKI_v2
                 button13.Select();
                 ile_do_zebrania = Convert.ToInt32(zasoby1[0]);
 
-                //   MessageBox.Show("ile pustych" + ile_pustych);
-                //  MessageBox.Show("ile pełnych" + ile_pełnych);
-                //   MessageBox.Show("suma_wszystkich" + suma_wszystkich);
-                //  MessageBox.Show("do zebrania" + ile_do_zebrania);
-
 
                 if (ile_pełnych != 0)
                 {
@@ -1684,14 +1679,13 @@ namespace GRA_KOSTKI_v2
 
                                     element2 = Convert.ToInt32(ustaw_txt.Text);
                                     suma_do_zebrania = suma_do_zebrania + element2;
-                                    //   MessageBox.Show("zasoby" + zasoby1[0]);
-                                    //   MessageBox.Show("zbieramy! (+ i)" + i);
+
                                     ustaw_txt.Text = "0";
                                     ustaw_txt.BackColor = Color.Gray;
                                 }
                                 else
                                 {
-                                    //   MessageBox.Show("koniec zbierania ! (i> niz zasoby)" + i);
+
                                 }
 
                             }
@@ -1709,7 +1703,7 @@ namespace GRA_KOSTKI_v2
                         zasoby1[0] = zasoby1[0] - ulepszenia1[0] + ile_pustych;
                     }
                     but_p_niezebrane.BackColor = Color.BurlyWood;
-                    
+
                     button_zbierzWszystkie.BackColor = Color.Orange;
                     button13.BackColor = Color.LightGray;
 
@@ -1727,10 +1721,7 @@ namespace GRA_KOSTKI_v2
                     zasoby1[5] = zasoby1[5] + (suma_do_zebrania * int.Parse(TB_MNOZNIK_JEDZENIA.Text));
                     wypluj_tablice_zasoby1();
                     wypluj_tablice_ulepszenia1();
-                    //   this.GB_PRACA.BackgroundImage = global::GRA_KOSTKI_v2.Properties.Resources.wood_txt1;
-                    //  this.groupBox1.BackgroundImage = global::GRA_KOSTKI_v2.Properties.Resources.wood_txt1;
-                    //   this.GB3.BackgroundImage = global::GRA_KOSTKI_v2.Properties.Resources.wood_txt1;
-                    //  this.GB_Z1.BackgroundImage = global::GRA_KOSTKI_v2.Properties.Resources.wood_txt2;
+
                     GB_Z1.Enabled = true;
                     flowLayoutPanel1.Visible = false;
                     GB_PRACA.Visible = false;
@@ -1758,10 +1749,6 @@ namespace GRA_KOSTKI_v2
             }
             else
             {
-
-
-
-
 
                 Button btn = (Button)sender;
                 int ile_trzeba_przerzucic = 0;
@@ -1801,8 +1788,6 @@ namespace GRA_KOSTKI_v2
                 {
                     Button btn2 = new Button();
 
-
-
                     if (i < zebrane)
                     {
                         btn2.Text = "0";
@@ -1829,8 +1814,6 @@ namespace GRA_KOSTKI_v2
                     btn2.Click += Zbieraj_jedzenie;
 
                     flowLayoutPanel1.Controls.Add(btn2);
-
-
 
                 }
                 zasoby1[2] = zasoby1[2] - 1;
@@ -1863,7 +1846,7 @@ namespace GRA_KOSTKI_v2
 
         private void button13_Click(object sender, EventArgs e) // ZAKONCZ
         {
-        
+
             ULEPSZENIA_MANA1.BackColor = Color.LightGray;
             button13.BackColor = Color.LightGray;
             ULEPSZENIA_MANA1.Enabled = false;
@@ -1872,8 +1855,6 @@ namespace GRA_KOSTKI_v2
             ZebranoFarma.Value = 0;
             tableLayoutPanel2.SuspendLayout();
             tableLayoutPanel1.SuspendLayout();
-            // this.tableLayoutPanel2.BackgroundImage = global::GRA_KOSTKI_v2.Properties.Resources.wood_txt1;
-            // this.GB_Z1.BackgroundImage = global::GRA_KOSTKI_v2.Properties.Resources.wood_txt1;
 
             if (int.Parse(TB_RUNDA.Text) == 51)
             {
@@ -1886,7 +1867,6 @@ namespace GRA_KOSTKI_v2
                 if (ulepszenia1[12] > 0)
                 {
 
-                   
                     pictureBox3.Visible = true;
                     GB_LAS.Visible = true;
                     GB_LAS_AKCJA.Visible = true;
@@ -1907,8 +1887,6 @@ namespace GRA_KOSTKI_v2
                     button13.Enabled = false;
                     ZAKONCZ_2.Enabled = false;
                     GB_LAS.Enabled = true;
-
-                    // this.GB_LAS_AKCJA.BackgroundImage = global::GRA_KOSTKI_v2.Properties.Resources.wood_txt2;
                     drwale_akacja = przyrost_n_drwali;
 
                     wypluj_dane_las();
@@ -1925,12 +1903,7 @@ namespace GRA_KOSTKI_v2
                     else
                     {
 
-
-                   
                         flowLayoutPanel1.Visible = false;
-
-
-
 
                         GB_PRACA.Visible = false;
                         tableLayoutPanel2.Enabled = false;
@@ -1995,7 +1968,6 @@ namespace GRA_KOSTKI_v2
                 tableLayoutPanel2.Enabled = false;
                 tableLayoutPanel1.Enabled = true;
 
-
                 MARKET.Enabled = true;
                 GB_LAS_BUDUJ.Enabled = true;
                 ZAKONCZ_2.Enabled = true;
@@ -2017,13 +1989,6 @@ namespace GRA_KOSTKI_v2
 
                     wypluj_tablice_ulepszenia1();
                     wypluj_tablice_zasoby1();
-                    /* if (ulepszenia1[0] == 10)
-                     {
-                         MessageBox.Show("OSIĄGNIĘTO POZIOM 10 - PRZYROST CENY ZWIĘKSZA SIĘ DWUKROTNIE");
-                         ulepszenia1[2] = ulepszenia1[2] * 2;
-                         wypluj_tablice_ulepszenia1();
-                     }
-                    */
                 }
             }
         }
@@ -2086,23 +2051,13 @@ namespace GRA_KOSTKI_v2
                         zasoby1[5] = zasoby1[5] - ulepszenia1[7];
                         ulepszenia1[6] = ulepszenia1[6] + 1;
                         ulepszenia1[7] = ulepszenia1[7] + ulepszenia1[8];
-                        //textBox32.Text = ((decimal.Parse(textBox32.Text) + ulepszenia1[8])).ToString();
-
-                        //ulepszenia1[7] = int.Parse(textBox32.Text);
-                        //zasoby1[4] = zasoby1[4] + 1;
 
                         wypluj_tablice_ulepszenia1();
                         wypluj_tablice_zasoby1();
 
-
-                        //zasoby1[5] = zasoby1[5] - ulepszenia1[10];
-                        //ulepszenia1[9] = ulepszenia1[9] + 1;
-                        //ulepszenia1[10] = ulepszenia1[10] + ulepszenia1[11];
                     }
                 }
             }
-
-
         }
 
         private void button5_Click(object sender, EventArgs e) //LVL UP3
@@ -2131,7 +2086,6 @@ namespace GRA_KOSTKI_v2
                 button22.ForeColor = Color.SaddleBrown;
                 button21.ForeColor = Color.SaddleBrown;
 
-
                 button5.Enabled = true;
                 button6.Enabled = true;
                 button18.Enabled = true;
@@ -2141,8 +2095,6 @@ namespace GRA_KOSTKI_v2
 
                 tableLayoutPanel2.Enabled = false;
                 tableLayoutPanel1.Enabled = true;
-
-
                 MARKET.Enabled = true;
                 GB_LAS_BUDUJ.Enabled = true;
                 ZAKONCZ_2.Enabled = true;
@@ -2150,10 +2102,6 @@ namespace GRA_KOSTKI_v2
 
             else
             {
-
-
-
-
                 if (zasoby1[5] - ulepszenia1[10] < 0)
                 {
                     Info();
@@ -2250,9 +2198,6 @@ namespace GRA_KOSTKI_v2
 
 
 
-
-
-
                 if (zasoby1[5] - ulepszenia1[4] < 0)
                 {
                     Info();
@@ -2278,10 +2223,6 @@ namespace GRA_KOSTKI_v2
         {
             tableLayoutPanel2.SuspendLayout();
             TB_klawisz.Text = (int.Parse(TB_klawisz.Text) + 1).ToString();
-
-            //   this.groupBox1.BackgroundImage = global::GRA_KOSTKI_v2.Properties.Resources.wood_txt1;
-            //  this.tableLayoutPanel2.BackgroundImage = global::GRA_KOSTKI_v2.Properties.Resources.wood_txt2;
-            //  this.GB_Z1.BackgroundImage = global::GRA_KOSTKI_v2.Properties.Resources.wood_txt2;
 
             GB_PRACA.Visible = false;
             GB_Z1.Enabled = true;
@@ -3045,7 +2986,7 @@ namespace GRA_KOSTKI_v2
                 }
                 else
                 {
-                    
+
 
                     textBox19.Text = (int.Parse(textBox19.Text) + 1).ToString();
                     textBox19.Text = (int.Parse(textBox19.Text) - 1).ToString();
@@ -3064,7 +3005,7 @@ namespace GRA_KOSTKI_v2
                     {
                         textBox12.BackColor = Color.LightPink;
                     }
-                    
+
                 }
             }
         }
@@ -3152,7 +3093,7 @@ namespace GRA_KOSTKI_v2
                 MARKET.Enabled = false;
                 GB_LAS_BUDUJ.Enabled = false;
                 ZAKONCZ_2.Enabled = false;
-        
+
                 button5.Enabled = false;
                 button6.Enabled = false;
                 button18.Enabled = false;
@@ -3161,7 +3102,7 @@ namespace GRA_KOSTKI_v2
                 button2.Enabled = false;
                 button13.BackColor = Color.LightGray;
 
-               
+
 
                 button3.Text = "50%";
                 button4.Text = "50%";
@@ -3550,7 +3491,7 @@ namespace GRA_KOSTKI_v2
 
 
                 MessageBox.Show("JESTEŚ W TRYBIE - 'WŁASNY SCENARIUSZ' - TWÓJ WYNIK KOŃCOWY NIE ZOSTANIE ZAPISANY DO TABLICY REKORDÓW");
-               
+
 
 
                 TB6.Text = (Properties.Settings.Default["ZM1"]).ToString();
@@ -4062,7 +4003,7 @@ namespace GRA_KOSTKI_v2
 
         private void button14_Click_3(object sender, EventArgs e)
         {
-           
+
 
             DialogResult dialogResult = MessageBox.Show("Czy napewno chcesz zrestartować gre ?", "RESTART", MessageBoxButtons.YesNo);
             if (dialogResult == DialogResult.Yes)
@@ -4085,7 +4026,7 @@ namespace GRA_KOSTKI_v2
 
         private void button19_Click_1(object sender, EventArgs e)
         {
-            DialogResult dialogResult = MessageBox.Show("Czy napewno chcesz wrócić do MENU GŁÓWNEGO ?" + Environment.NewLine +" (stan gry nie zostanie zapisany)", "POWRÓT", MessageBoxButtons.YesNo);
+            DialogResult dialogResult = MessageBox.Show("Czy napewno chcesz wrócić do MENU GŁÓWNEGO ?" + Environment.NewLine + " (stan gry nie zostanie zapisany)", "POWRÓT", MessageBoxButtons.YesNo);
             if (dialogResult == DialogResult.Yes)
             {
                 MainMenu dominik2 = new MainMenu();
@@ -4233,7 +4174,7 @@ namespace GRA_KOSTKI_v2
 
             if (ULEPSZENIA_MANA2.Enabled == true)
             {
-               ULEPSZENIA_MANA2.BackColor = Color.BurlyWood;
+                ULEPSZENIA_MANA2.BackColor = Color.BurlyWood;
             }
 
             ActiveControl.BackColor = Color.Orange;
@@ -4256,7 +4197,7 @@ namespace GRA_KOSTKI_v2
                 button7.BackColor = Color.BurlyWood;
                 BUDUJ.BackColor = Color.BurlyWood;
                 ZAKONCZ_2.BackColor = Color.BurlyWood;
-            //  ULEPSZENIA_MANA2.BackColor = Color.BurlyWood;
+                //  ULEPSZENIA_MANA2.BackColor = Color.BurlyWood;
 
                 ActiveControl.BackColor = Color.Orange;
             }
@@ -4500,7 +4441,7 @@ namespace GRA_KOSTKI_v2
 
         private void ULEPSZENIA_MANA1_EnabledChanged(object sender, EventArgs e)
         {
-          
+
         }
 
         private void ULEPSZENIA_MANA2_EnabledChanged(object sender, EventArgs e)
@@ -4527,7 +4468,7 @@ namespace GRA_KOSTKI_v2
 
         private void textBox19_TextChanged(object sender, EventArgs e)
         {
-           
+
 
             if (((GB_LAS_PRACA.Visible == true) || (ActiveControl.Name == "button8")) || (ActiveControl.Name == "button11"))
             {
@@ -4639,13 +4580,13 @@ namespace GRA_KOSTKI_v2
             button17.BackColor = Color.BurlyWood;
             button1.BackColor = Color.BurlyWood;
             button2.BackColor = Color.BurlyWood;
-        //  ULEPSZENIA_MANA2.BackColor = Color.BurlyWood;
+            //  ULEPSZENIA_MANA2.BackColor = Color.BurlyWood;
             ZAKONCZ_2.BackColor = Color.BurlyWood;
 
             ActiveControl.BackColor = Color.Orange;
         }
 
-      
+
 
         private void button15_Click_2(object sender, EventArgs e) // READ ONLY
         {
@@ -4699,9 +4640,9 @@ namespace GRA_KOSTKI_v2
             {
                 button6.BackColor = Color.BurlyWood;
             }
-           
+
             ActiveControl.BackColor = Color.Orange;
-            
+
         }
 
         private void ULEPSZENIA_MANA1_Enter_1(object sender, EventArgs e)
@@ -4752,7 +4693,7 @@ namespace GRA_KOSTKI_v2
         {
             groupBox_Nowa_gra.Visible = true;
             button19.Select();
-          
+
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -4760,7 +4701,7 @@ namespace GRA_KOSTKI_v2
 
         }
 
-        int klikMana=0;
+        int klikMana = 0;
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
