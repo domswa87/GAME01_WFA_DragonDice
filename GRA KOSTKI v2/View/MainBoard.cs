@@ -1165,9 +1165,6 @@ namespace GRA_KOSTKI_v2
                     return true;
                 }
             }
-
-
-
             return base.ProcessCmdKey(ref msg, keyData);
         }
 
@@ -1215,78 +1212,13 @@ namespace GRA_KOSTKI_v2
             Hide();
             LossGame form3 = new LossGame();
             form3.Show();
-
         }
 
-
-
-        /* public void RANKING()
-        {
-            PICTURE_WIN.Visible = true;
-            
-            this.PICTURE_WIN.Location = new System.Drawing.Point(50, 50);
-            this.PICTURE_WIN.Name = "PICTURE_WIN";
-            this.PICTURE_WIN.Size = new System.Drawing.Size(260, 320);
-
-            decimal value = decimal.Parse(textBox43.Text);
-            value = Math.Floor(value / 1000);
-
-            switch (value)
-            {
-                case 1:
-                    this.PICTURE_WIN.Image = global::GRA_KOSTKI_v2.Properties.Resources.WIN1;
-                    break;
-
-                case 2:
-                    this.PICTURE_WIN.Image = global::GRA_KOSTKI_v2.Properties.Resources.WIN2;
-                    break;
-                case 3:
-                    this.PICTURE_WIN.Image = global::GRA_KOSTKI_v2.Properties.Resources.WIN3;
-                    break;
-                case 4:
-                    this.PICTURE_WIN.Image = global::GRA_KOSTKI_v2.Properties.Resources.WIN4;
-                    break;
-                case 5:
-                    this.PICTURE_WIN.Image = global::GRA_KOSTKI_v2.Properties.Resources.WIN5;
-                    break;
-                case 6:
-                    this.PICTURE_WIN.Image = global::GRA_KOSTKI_v2.Properties.Resources.WIN5;
-                    break;
-                case 7:
-                    this.PICTURE_WIN.Image = global::GRA_KOSTKI_v2.Properties.Resources.WIN5;
-                    break;
-                case 8:
-                    this.PICTURE_WIN.Image = global::GRA_KOSTKI_v2.Properties.Resources.WIN5;
-                    break;
-                case 9:
-                    this.PICTURE_WIN.Image = global::GRA_KOSTKI_v2.Properties.Resources.WIN5;
-                    break;
-                case 10:
-                    this.PICTURE_WIN.Image = global::GRA_KOSTKI_v2.Properties.Resources.WIN5;
-                    break;
-                case 11:
-                    this.PICTURE_WIN.Image = global::GRA_KOSTKI_v2.Properties.Resources.WIN5;
-                    break;
-                case 12:
-                    this.PICTURE_WIN.Image = global::GRA_KOSTKI_v2.Properties.Resources.WIN5;
-                    break;
-
-
-                default:
-                    this.PICTURE_WIN.Image = global::GRA_KOSTKI_v2.Properties.Resources.WIN1;
-                    break;
-            }
-        }
-        */
 
         public void Info() // INFO
         {
             MessageBox.Show("Brak zasobów");
         }
-
-
-
-
 
         public void KONIEC_RUNDY() // KONIEC RUNDY
         {
@@ -1340,10 +1272,9 @@ namespace GRA_KOSTKI_v2
 
             textBox24.Text = TB_U12.Text;
             textBox10.Text = (int.Parse(textBox10.Text) + (int.Parse(textBox29.Text))).ToString();
-            //TB3.Text = (int.Parse(TB3.Text) + (int.Parse(textBox29.Text))).ToString();
             textBox23.Text = "0";
             TB2.Text = "0";
-            //  textBox31.Text = TB_RUNDA.Text;
+
 
 
             int value = int.Parse(TB_RUNDA.Text);

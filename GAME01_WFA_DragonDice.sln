@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.106
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Smocze Kosci - Gra Planszowa", "GRA KOSTKI v2\Smocze Kosci - Gra Planszowa.csproj", "{F97CA7FB-8B17-48FE-B778-4027A2F691EE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GAME01_WFA_DragonDice", "GRA KOSTKI v2\GAME01_WFA_DragonDice.csproj", "{F97CA7FB-8B17-48FE-B778-4027A2F691EE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
